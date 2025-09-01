@@ -34,7 +34,7 @@ func main() {
 
 	columns, _ := strconv.ParseInt(column_scaner.Text(), 10, 64)
 	rows, _ := strconv.ParseInt(row_scanner.Text(), 10, 64)
-	var row_increment int64 //Match type with strconv.ParseInt
+	var row_increment int64 //Match type with strconv.ParseInt()
 	var column_increment int64
 
 	for row_increment = 0; row_increment < rows; row_increment++ {
@@ -46,3 +46,4 @@ func main() {
 	}
 
 }
+
