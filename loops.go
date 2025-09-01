@@ -37,13 +37,14 @@ func main() {
 	var row_increment int64 //Match type with strconv.ParseInt()
 	var column_increment int64
 
-	for row_increment = 0; row_increment < rows; row_increment++ {
-		for column_increment = 0; column_increment < columns; column_increment++ { // nestted loops
+	for row_increment = range rows {
+		for column_increment = range columns { // nestted loops
 			fmt.Print("#") //It doesn't do all this before moving, it finishes one iteration
+			column_increment++
 		}
+		row_increment++
 		fmt.Print("\n")
 
 	}
 
 }
-
