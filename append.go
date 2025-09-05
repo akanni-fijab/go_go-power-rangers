@@ -27,9 +27,9 @@ func main() {
 		actual_input, _ := strconv.ParseInt(scan_input.Text(), 10, 64)
 		// user_store = append(user_store, actual_input)
 		user_store[i] = actual_input
-		i++
 
 	}
 	fmt.Print(user_store)
 
 }
+
